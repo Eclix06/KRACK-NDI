@@ -132,3 +132,5 @@ element.addEventListener("click", (event) => {
   const y = rect.top + rect.height / 2; // Position Y du centre de l'image
   triggerFirework(x, y);
 });
+
+
