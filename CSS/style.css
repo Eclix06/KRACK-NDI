@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.btn {
+  border-radius: 50px;
+}
+
+.position-absolute {
+  font-size: 0.9rem;
+}
+
+footer {
+    background-color: #2E2E2E;
+    color: white;
+}
+
+input {
+    background-color: transparent;
+    border-style: hidden;
+    
+}
+
+.espacement {
+    margin-right: 20%;
+}
+
+.espace {
+	padding: 1vh 1vw;
+}
+
+.hero {
+	width: 100%;
+	height: 50vh;
+	/* background-color: #00aeff; */
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2vh;
+	border-radius: 1vw;
+}
+
+.hero .hero_top {
+	display: flex;
+
+	align-items: center;
+	height: 8vh;
+}
+
+.hero .hero_top > .blue {
+	width: 100%;
+	height: 100%;
+    background: linear-gradient(to right, #3B6B82, #63b3da); /* Dégradé bleu */
+
+	border-radius: 1vw 1vw 0 0;
+}
+
+.hero .hero_top div {
+	width: 15%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	background-color: white;
+	border-bottom-left-radius: 1vw;
+	position: relative;
+}
+
+.hero .hero_top div::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 4.5vh;
+	width: 10vw;
+	height: 5vh;
+
+    background: linear-gradient(to right, #63b3da, #63b3da); /* Dégradé bleu */
+	z-index: -1;
+}
+
+.hero .hero_top div > button {
+	background-color: black;
+	border: none;
+	color: white;
+	cursor: pointer;
+	width: 90%;
+	height: 4.5vh;
+	border-radius: 25vw;
+}
+
+.hero .bottom {
+	display: flex;
+	gap: 1vw;
+	flex-direction: column;
+    background: linear-gradient(to right, #3B6B82, #69BFE8); /* Dégradé bleu */
+	height: 100%;
+	border-radius: 0 1vw 1vw 1vw;
+	padding: 1vh 1vw;
+}
+
+.hero .bottom > .lune {
+	background-color: black;
+	border: none;
+	color: white;
+	cursor: pointer;
+	border-radius: 75%;
+	margin-left: auto;
+}
+
+.card_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2vw;
+	flex-wrap: wrap;
+	flex: 1 1 auto;
+}
+
+.card_container .card:nth-child(1) {
+	/* degrader de couleur d'en bas a gauche vers le haut a droite */
+	background: linear-gradient(to right, #537574, #9bdbd8);
+	width: 40vw;
+	height: 25vh;
+}
+
+.card_container .card:nth-child(2) {
+	background-color: gray;
+	width: 25vw;
+	height: 25vh;
+}
+
+.card_container .card:nth-child(3) {
+	background-color: gray;
+	width: 10vw;
+	height: 25vh;
+}
+
+.card {
+	border-radius: 1vw;
+	position: relative;
+	/* responsive */
+	flex: 1 1 auto;
+}
+
+.card > button {
+	position: absolute;
+	bottom: 1vh;
+	right: 0.5vw;
+	background-color: black;
+	border: none;
+	cursor: pointer;
+	border-radius: 50%;
+	width: 2.5vw;
+	height: 5vh;
+}
+
+
+
+.card > button > img {
+	filter: invert(1);
+}
+
+
+.logo {
+    background-color: white;
+    border-radius: 100%;
+    width: 50%;
+}
+
+.gradient-bg {
+    background: linear-gradient(to right, #3B6B82, #69BFE8); /* Dégradé bleu */
+  }
+
+  #moving-element {
+    position: absolute; /* Nécessaire pour le déplacement */
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 200px;
+  }
+  
+  #fireworks-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Recouvre toute la largeur de la fenêtre */
+    height: 100vh; /* Recouvre toute la hauteur de la fenêtre */
+    pointer-events: none; /* Permet de cliquer à travers le canevas */
+    z-index: 999; /* Met le canevas au-dessus de tout */
+  }
