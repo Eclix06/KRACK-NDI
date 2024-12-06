@@ -1,0 +1,133 @@
+body {
+	padding: 1vh 1vw;
+}
+
+.hero {
+	width: 100%;
+	height: 50vh;
+	/* background-color: #00aeff; */
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2vh;
+	border-radius: 1vw;
+}
+
+.hero .hero_top {
+	display: flex;
+
+	align-items: center;
+	height: 8vh;
+}
+
+.hero .hero_top > .blue {
+	width: 100%;
+	height: 100%;
+	background-color: #00aeff;
+
+	border-radius: 1vw 1vw 0 0;
+}
+
+.hero .hero_top div {
+	width: 15%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	background-color: white;
+	border-bottom-left-radius: 1vw;
+	position: relative;
+}
+
+.hero .hero_top div::after {
+	content: "";
+	position: absolute;
+	left: -5vw;
+	top: 4.5vh;
+	width: 10vw;
+	height: 5vh;
+
+	background-color: #00aeff;
+	z-index: -1;
+}
+
+.hero .hero_top div > button {
+	background-color: black;
+	border: none;
+	color: white;
+	cursor: pointer;
+	width: 90%;
+	height: 4.5vh;
+	border-radius: 25vw;
+}
+
+.hero .bottom {
+	display: flex;
+	gap: 1vw;
+	flex-direction: column;
+	background-color: #00aeff;
+	height: 100%;
+	border-radius: 0 1vw 1vw 1vw;
+	padding: 1vh 1vw;
+}
+
+.hero .bottom > .lune {
+	background-color: black;
+	border: none;
+	color: white;
+	cursor: pointer;
+	width: 4vw;
+	height: 4vh;
+	border-radius: 50%;
+	margin-left: auto;
+}
+
+.card_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2vw;
+	flex-wrap: wrap;
+	flex: 1 1 auto;
+}
+
+.card_container .card:nth-child(1) {
+	/* degrader de couleur d'en bas a gauche vers le haut a droite */
+	background: linear-gradient(to right, #537574, #9bdbd8);
+	width: 40vw;
+	height: 25vh;
+}
+
+.card_container .card:nth-child(2) {
+	background-color: gray;
+	width: 25vw;
+	height: 25vh;
+}
+
+.card_container .card:nth-child(3) {
+	background-color: gray;
+	width: 10vw;
+	height: 25vh;
+}
+
+.card {
+	border-radius: 1vw;
+	position: relative;
+	/* responsive */
+	flex: 1 1 auto;
+}
+
+.card > button {
+	position: absolute;
+	bottom: 1vh;
+	right: 0.5vw;
+	background-color: black;
+	border: none;
+	cursor: pointer;
+	border-radius: 50%;
+	width: 2.5vw;
+	height: 5vh;
+}
+
+.card > button > img {
+	filter: invert(1);
+}
