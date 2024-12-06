@@ -1,3 +1,83 @@
+.hero {
+	width: 100%;
+	height: 50vh;
+	/* background-color: #00aeff; */
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2vh;
+	border-radius: 1vw;
+}
+
+.hero .hero_top {
+	display: flex;
+
+	align-items: center;
+	height: 8vh;
+}
+
+.hero .hero_top > .blue {
+	width: 100%;
+	height: 100%;
+	background-color: #00aeff;
+
+	border-radius: 1vw 1vw 0 0;
+}
+
+.hero .hero_top div {
+	width: 15%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	background-color: white;
+	border-bottom-left-radius: 1vw;
+	position: relative;
+}
+
+.hero .hero_top div::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 4.5vh;
+	width: 17vw;
+	height: 5vh;
+	border-top: 8vh solid #00aeff;
+	border-left: 15vw solid transparent;
+	z-index: -1;
+	border-radius: 90vw;
+}
+
+.hero .hero_top div > button {
+	background-color: black;
+	border: none;
+	color: white;
+	cursor: pointer;
+	width: 90%;
+	height: 4.5vh;
+	border-radius: 25vw;
+}
+
+.hero .bottom {
+	display: flex;
+	gap: 1vw;
+	flex-direction: column;
+	background-color: #00aeff;
+	height: 100%;
+	border-radius: 0 1vw 1vw 1vw;
+	padding: 1vh 1vw;
+}
+
+.hero .bottom > .lune {
+	background-color: black;
+	border: none;
+	color: white;
+	cursor: pointer;
+	width: 4vw;
+	height: 4vh;
+	border-radius: 50%;
+	margin-left: auto;
+}
+
 .card_container {
 	display: flex;
 	justify-content: center;
