@@ -41,7 +41,7 @@ body {
 .hero .hero_top div::after {
 	content: "";
 	position: absolute;
-	left: -5vw;
+	left: 0;
 	top: 4.5vh;
 	width: 10vw;
 	height: 5vh;
