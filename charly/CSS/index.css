@@ -1,3 +1,7 @@
+body {
+	padding: 1vh 1vw;
+}
+
 .hero {
 	width: 100%;
 	height: 50vh;
